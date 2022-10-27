@@ -1,97 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Photos</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Posts</title>
     <link rel="icon" type="image/x-icon" href="145802.png" />
   </head>
-
   <style>
     body {
-      color: white !important;
+      color: white;
       background-color: #242526;
+    }
+
+    .card {
+      background-color: #242526;
+      border-radius: 20px;
     }
   </style>
 
-  <body style="text-align: justify;">
+  <body style="text-align: center;">
     <section
       style="
         position: relative;
-        height: 550px;
-        background-size: cover;
+        height: 300px;
         background-position: center;
-        background-image: url(img-2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url('img-2.jpg');
       "
     >
-      <div style="position: absolute; bottom: -190px; left: 80px;">
+      <div style="position: absolute; bottom: -150px; left: 100px;">
         <img
-          style="
-            border: 7px solid #242526;
-            border-radius: 70%;
-            padding: 0px;
-          "
-          height="230"
-          width="230"
+          style="border: 5px solid #242526; border-radius: 50%;"
+          height="180"
+          width="180"
           src="img-1.jpg"
         />
       </div>
+
       <div
         style="
           position: absolute;
-          bottom: -80px;
-          left: 350px;
+          bottom: -60px;
+          left: 310px;
           text-align: left;
         "
       >
-        <div style="font-family: 1000; font-size: 28px;">
-          Oijie Mae Z. Abadilla
+        <div style="font-weight: 900; font-size: 28px;">
+          Oijie Mae Abadilla
         </div>
-        <div>30 friends</div>
+        <div>43 friends</div>
+      </div>
     </section>
 
     <section
-      style="margin-top: 180px; padding: 0% 40px; background-color: #18191a;"
-    >
-    <div style="display: flex; gap: 10px; padding: 20px 10px;">
-      <a href="/post.html">Post</a>
-      <a href="/about.html">About</a>
-      <a href="/photos.html">Photos</a>
-      <a href="/videos.html">Videos</a>
-      <a href="/hobbies.html">Hobbies</a>
-    </div>
-    <div
       style="
-        background-color: gray;
-        height: 1000px;
-        margin: 30px;
-        display: flex;
-        gap: 30px;
+        margin-top: 170px;
+        padding: 0% 40px;
+        background-color: #18191a;
+        border-radius: 10px;
       "
     >
-      <div
-        style="
-          height: 300px;
-          width: 40%;
-          background-color: #242526;
-          border-radius: 15px;
-          font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-          font-size: larger;
-        "
-      >
-      Info
+      <div style="width: 60%; display: flex; gap: 10px; padding: 20px 10px;">
+        <a href="/post.html"><strong>Posts</strong></a>
+        <a href="/about.html"><strong>About</strong></a>
+        <a href="/friends.html"><strong>Friends</strong></a>
+        <a href="/photos.html"><strong>Photos</strong></a>
+        <a href="/videos.html"><strong>More</strong></a>
       </div>
-      <div
-          style="
-            height: 500px;
-            width: 60%;
-            background-color: #242526;
-            border-radius: 20px;
-          "
-        >
-          Post area
-  </div>
-    </div>
+
+      <div style="height: 1000px; display: flex; gap: 30px;">
+        <div class="card" style="height: 300px; width: 40%;"></div>
+        <div class="card" style="height: 500px; width: 60%;"></div>
+      </div>
+    </section>
   </body>
 </html>
